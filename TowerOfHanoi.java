@@ -9,11 +9,11 @@ public class TowerOfHanoi{
 	public TowerOfHanoi(int n){
 		this.height = height;
 		this.state = new HashMap<>();
-		this.state.put("L", new ArrayList<Integer>());
+		this.state.put("A", new ArrayList<Integer>());
+		this.state.put("B", new ArrayList<Integer>());
 		this.state.put("C", new ArrayList<Integer>());
-		this.state.put("R", new ArrayList<Integer>());
 		
-		ArrayList<Integer> column = this.state.get("L");
+		ArrayList<Integer> column = this.state.get("A");
 		for(int i = n; i >= 1; i--){
 			column.add(i);
 		}
